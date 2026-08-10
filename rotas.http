@@ -1,0 +1,26 @@
+GET http://localhost:8080/all-movies
+
+###
+POST http://localhost:8080/add-movie
+Content-Type: application/json 
+
+{
+    "titulo": "Manual Prático da Vingança Lucrativa",
+    "genero": "Aventura",
+    "duracao": "1h45min",
+    "classificacao_etaria": "16"
+}
+
+###
+DELETE http://localhost:8080/delete-movie/3
+
+###
+PUT http://localhost:8080/update-movie/9
+Content-Type: application/json
+
+{
+    "titulo": "",
+    "genero": "",
+    "duracao": "",
+    "classificacao_etaria": ""
+}
